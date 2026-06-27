@@ -1,0 +1,266 @@
+@import "tailwindcss";
+
+/* ----------------------------------------------------------------
+   Design tokens — dark glassmorphism (Raycast / Linear / Vercel)
+   Single source of truth for color, blur, and radius values used
+   across the glass primitives below and any Tailwind arbitrary
+   values in components.
+---------------------------------------------------------------- */
+:root {
+  --bg: #070710;
+
+  --glass-bg: rgba(255, 255, 255, 0.04);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-strong-bg: rgba(255, 255, 255, 0.06);
+  --glass-strong-border: rgba(255, 255, 255, 0.1);
+  --glass-soft-bg: rgba(255, 255, 255, 0.025);
+  --glass-soft-border: rgba(255, 255, 255, 0.06);
+
+  --accent-from: #6366f1;
+  --accent-to: #7c3aed;
+  --accent-2: #0ea5e9;
+
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.6);
+  --text-muted: rgba(255, 255, 255, 0.35);
+
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-glass-border: var(--glass-border);
+  --color-accent-from: var(--accent-from);
+  --color-accent-to: var(--accent-to);
+  --color-accent-2: var(--accent-2);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--text-primary);
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+* {
+  border-color: var(--glass-border);
+}
+
+/* ----------------------------------------------------------------
+   Ambient background — three drifting blurred orbs
+---------------------------------------------------------------- */
+.mesh {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(90px);
+}
+
+.orb-1 {
+  width: 520px;
+  height: 520px;
+  top: -140px;
+  left: -100px;
+  opacity: 0.55;
+  background: radial-gradient(circle, var(--accent-from), transparent 70%);
+  animation: drift1 22s ease-in-out infinite;
+}
+
+.orb-2 {
+  width: 480px;
+  height: 480px;
+  bottom: -160px;
+  right: -80px;
+  opacity: 0.55;
+  background: radial-gradient(circle, var(--accent-to), transparent 70%);
+  animation: drift2 26s ease-in-out infinite;
+}
+
+.orb-3 {
+  width: 360px;
+  height: 360px;
+  top: 40%;
+  left: 55%;
+  opacity: 0.3;
+  background: radial-gradient(circle, var(--accent-2), transparent 70%);
+  animation: drift3 30s ease-in-out infinite;
+}
+
+@keyframes drift1 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(60px, 40px); }
+}
+@keyframes drift2 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-50px, -30px); }
+}
+@keyframes drift3 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-40px, 50px); }
+}
+
+/* ----------------------------------------------------------------
+   Glass surface primitives
+---------------------------------------------------------------- */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px) saturate(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(140%);
+  border: 1px solid var(--glass-border);
+}
+
+.glass-strong {
+  background: var(--glass-strong-bg);
+  backdrop-filter: blur(28px) saturate(160%);
+  -webkit-backdrop-filter: blur(28px) saturate(160%);
+  border: 1px solid var(--glass-strong-border);
+}
+
+.glass-soft {
+  background: var(--glass-soft-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-soft-border);
+}
+
+.grad-accent {
+  background: linear-gradient(135deg, var(--accent-from) 0%, var(--accent-to) 100%);
+}
+
+.grad-text {
+  background: linear-gradient(120deg, #a5b4fc, #c4b5fd 60%, #93c5fd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glow {
+  box-shadow:
+    0 8px 32px -8px rgba(124, 58, 237, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.ring-glow {
+  filter: drop-shadow(0 0 6px rgba(124, 58, 237, 0.5));
+}
+
+.nav-active {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.02));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.ping-dot {
+  animation: ping 1.6s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  animation: fade 0.4s ease both;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ----------------------------------------------------------------
+   Scrollbar
+---------------------------------------------------------------- */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ----------------------------------------------------------------
+   Accessibility
+---------------------------------------------------------------- */
+:focus-visible {
+  outline: 2px solid var(--accent-2);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* ----------------------------------------------------------------
+   Mobile fixes
+---------------------------------------------------------------- */
+
+/* Prevent iOS input zoom — inputs must be >= 16px on mobile */
+@media (max-width: 1023px) {
+  input,
+  textarea,
+  select {
+    font-size: 16px !important;
+  }
+}
+
+/* Ensure tap targets feel snappy on mobile */
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* PDF iframe — responsive height */
+.pdf-iframe {
+  height: 55vh;
+  min-height: 300px;
+}
+@media (min-width: 1024px) {
+  .pdf-iframe {
+    height: calc(100vh - 280px);
+    min-height: 500px;
+  }
+}
+
+/* Hide scrollbar on chip rows while keeping scroll functionality */
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}

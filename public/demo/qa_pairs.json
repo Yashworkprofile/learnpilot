@@ -1,0 +1,277 @@
+[
+  {
+    "question": "What is the 'Intro to Deep Learning' lecture about?",
+    "answer": "The lecture introduces the perceptron as the fundamental building block of deep learning, explaining its forward propagation as a linear combination of inputs followed by a non-linear activation. It covers common activation functions—sigmoid, hyperbolic tangent, and ReLU—and demonstrates why non-linearities are essential for modeling complex decisions. The instructor shows how to implement a dense (fully‑connected) layer from scratch in PyTorch and walks through a concrete perceptron example with specific weights and bias.",
+    "sources": [
+      {
+        "lecture_id": 1001,
+        "title": "Intro to Deep Learning",
+        "section_title": "Foundations"
+      }
+    ]
+  },
+  {
+    "question": "What are the key concepts covered in Intro to Deep Learning?",
+    "answer": "• Perceptron computes y = g(W·x + b) using a linear combination and a non‑linear activation\n• Activation functions (sigmoid, tanh, ReLU) introduce non‑linearity enabling arbitrarily complex mappings\n• Linear activations yield only linear decision boundaries regardless of network depth\n• Dense (fully‑connected) layers connect every input to every output, extending the perceptron to multiple outputs\n• Implementing a custom dense layer in PyTorch with nn.Parameter for learnable weights",
+    "sources": [
+      {
+        "lecture_id": 1001,
+        "title": "Intro to Deep Learning",
+        "section_title": "Foundations"
+      }
+    ]
+  },
+  {
+    "question": "What will I learn from the Intro to Deep Learning lecture?",
+    "answer": "• How to calculate a perceptron output: with W1=1, W2=3, bias=1, input X=[-1,2] gives y≈0.002 after sigmoid\n• The sigmoid function formula g(z)=1/(1+e^{-z}) and its derivative g'(z)=g(z)(1‑g(z))\n• ReLU function definition g(z)=max(0,z) and its piecewise derivative\n• Why linear activation functions cannot create non‑linear decision boundaries\n• How to write a PyTorch dense layer class: class MyDenseLayer(nn.Module) with torch.randn weights\n• The role of dense layers in multi‑output perceptrons (each output computes y_i = g(W_i·x + b_i))",
+    "sources": [
+      {
+        "lecture_id": 1001,
+        "title": "Intro to Deep Learning",
+        "section_title": "Foundations"
+      }
+    ]
+  },
+  {
+    "question": "What are the important terms defined in Intro to Deep Learning?",
+    "answer": "• Perceptron: The structural building block of deep learning that performs a weighted sum of inputs plus bias, then applies a non‑linear activation function.\n• Activation Function: A non‑linear function applied to the perceptron's linear combination to enable complex mappings.\n• Dense Layer: A fully‑connected layer where every input neuron connects to every output neuron; also called a multi‑output perceptron.\n• Sigmoid Function: An S‑shaped activation: g(z)=1/(1+e^{-z}), output range (0,1).\n• ReLU: Rectified Linear Unit activation: g(z)=max(0,z), passes positive values unchanged and zeroes negatives.",
+    "sources": [
+      {
+        "lecture_id": 1001,
+        "title": "Intro to Deep Learning",
+        "section_title": "Foundations"
+      }
+    ]
+  },
+  {
+    "question": "What does the instructor emphasise as most important in Intro to Deep Learning?",
+    "answer": "• Non‑linear activation functions are essential and will appear throughout the course\n• Linear activations cannot create non‑linear decision boundaries\n• The perceptron is the foundational building block for all deep learning models",
+    "sources": [
+      {
+        "lecture_id": 1001,
+        "title": "Intro to Deep Learning",
+        "section_title": "Foundations"
+      }
+    ]
+  },
+  {
+    "question": "What is the 'Deep Sequence Modeling' lecture about?",
+    "answer": "The lecture introduces the foundations of deep sequence modeling, focusing on recurrent neural networks (RNNs) and how they process variable‑length sequences by sharing parameters across time steps. It demonstrates building a custom RNN cell in TensorFlow, using built‑in SimpleRNN and PyTorch RNN layers, and explains training with backpropagation through time. Learners come away understanding how RNNs maintain hidden states, handle long‑term dependencies, and the challenges of exploding gradients.",
+    "sources": [
+      {
+        "lecture_id": 1002,
+        "title": "Deep Sequence Modeling",
+        "section_title": "Foundations"
+      }
+    ]
+  },
+  {
+    "question": "What are the key concepts covered in Deep Sequence Modeling?",
+    "answer": "• RNNs apply the same recurrence relation at every time step, updating a hidden state that carries information from previous inputs.\n• Sequence modeling design criteria include handling variable‑length inputs, tracking long‑term dependencies, preserving order, and sharing parameters.\n• Word embeddings convert discrete word indices into dense vectors, enabling neural networks to process language.\n• Backpropagation Through Time (BPTT) unfolds the RNN across time to compute gradients for learning.\n• Exploding gradients arise from repeated multiplication by recurrent weight matrices, destabilizing training.",
+    "sources": [
+      {
+        "lecture_id": 1002,
+        "title": "Deep Sequence Modeling",
+        "section_title": "Foundations"
+      }
+    ]
+  },
+  {
+    "question": "What will I learn from the Deep Sequence Modeling lecture?",
+    "answer": "• How to implement a custom RNN cell in TensorFlow using tf.keras.layers.Layer and weight matrices W_xh, W_hh, W_hy.\n• How to instantiate a built‑in SimpleRNN layer in TensorFlow with a specified number of units.\n• How to create a PyTorch RNN layer with torch.nn.RNN specifying input size and hidden units.\n• How hidden states are initialized to zeros and updated with tanh(W_hh·h_{t‑1} + W_xh·x_t).\n• How to encode words using one‑hot vectors versus learned embeddings.\n• Why BPTT can cause exploding gradients and the need for techniques to mitigate it.",
+    "sources": [
+      {
+        "lecture_id": 1002,
+        "title": "Deep Sequence Modeling",
+        "section_title": "Foundations"
+      }
+    ]
+  },
+  {
+    "question": "What are the important terms defined in Deep Sequence Modeling?",
+    "answer": "• Recurrent Neural Network (RNN): A network that processes sequences by applying the same function and weight matrices at each time step, maintaining a hidden state that is updated from the previous state and current input.\n• Hidden state: A vector (e.g., initialized as [0, 0, 0, 0]) that stores information from past time steps and is updated via h_t = tanh(W_hh·h_{t‑1} + W_xh·x_t).\n• Embedding: A learned dense vector representation that maps a word index to a fixed‑size vector, replacing sparse one‑hot encodings.\n• Backpropagation Through Time (BPTT): Training algorithm for RNNs that unfolds the network across time steps, computes gradients through the unrolled graph, and updates shared parameters.\n• Exploding Gradient: A phenomenon where repeated multiplication by recurrent weight matrices causes gradient magnitudes to grow exponentially, making learning unstable.",
+    "sources": [
+      {
+        "lecture_id": 1002,
+        "title": "Deep Sequence Modeling",
+        "section_title": "Foundations"
+      }
+    ]
+  },
+  {
+    "question": "What does the instructor emphasise as most important in Deep Sequence Modeling?",
+    "answer": "• RNNs satisfy all four sequence‑modeling design criteria.\n• The same weight matrices are reused at every time step in an RNN.\n• Backpropagation through time can lead to exploding gradients, which must be addressed.",
+    "sources": [
+      {
+        "lecture_id": 1002,
+        "title": "Deep Sequence Modeling",
+        "section_title": "Foundations"
+      }
+    ]
+  },
+  {
+    "question": "What is the 'Deep Computer Vision' lecture about?",
+    "answer": "The lecture explains that images are matrices of pixel values (0‑255) and introduces computer‑vision tasks such as classification and regression. It contrasts manual feature extraction with learning hierarchical features via convolutional neural networks, showing how CNNs use spatial structure, sliding‑window filters, and weight sharing. Learners see how fully‑connected nets ignore spatial layout, while convolutions preserve it and reduce parameters.",
+    "sources": [
+      {
+        "lecture_id": 1003,
+        "title": "Deep Computer Vision",
+        "section_title": "Computer Vision & Generative Models"
+      }
+    ]
+  },
+  {
+    "question": "What are the key concepts covered in Deep Computer Vision?",
+    "answer": "• Images are numeric matrices; an RGB image can be represented as 80x80x3 values in the range 0‑255.\n• Manual feature extraction is limited by viewpoint, scale, occlusion, and background variation.\n• Convolution applies a filter (e.g., 4x4 with 16 shared weights) across patches to extract local features.\n• CNNs preserve spatial structure by connecting each neuron to a local region of the input, unlike fully‑connected networks.\n• Classification outputs class labels (or probabilities) while regression outputs continuous values.",
+    "sources": [
+      {
+        "lecture_id": 1003,
+        "title": "Deep Computer Vision",
+        "section_title": "Computer Vision & Generative Models"
+      }
+    ]
+  },
+  {
+    "question": "What will I learn from the Deep Computer Vision lecture?",
+    "answer": "• An image is a matrix of numbers between 0 and 255; for RGB, shape is 80x80x3.\n• A 4x4 convolution filter contains 16 learnable weights.\n• A 3x3 filter sliding over a 5x5 image produces a feature map via element‑wise multiplication and summation.\n• Fully connected networks treat the input as a flat vector, losing spatial information and requiring many parameters.\n• Convolutional layers share filter weights across all spatial locations, drastically reducing parameter count.\n• Manual feature extraction struggles with variations such as viewpoint, scale, occlusion, and background clutter.",
+    "sources": [
+      {
+        "lecture_id": 1003,
+        "title": "Deep Computer Vision",
+        "section_title": "Computer Vision & Generative Models"
+      }
+    ]
+  },
+  {
+    "question": "What are the important terms defined in Deep Computer Vision?",
+    "answer": "• Fully Connected Neural Network: A network where each neuron in a layer connects to every neuron in the next layer, using a vector of pixel values and ignoring spatial layout.\n• Convolution: An operation that applies a small filter (e.g., 3x3 or 4x4) across an image, multiplying overlapping patches element‑wise and summing to produce a feature map.\n• Filter (Kernel): A small matrix of learnable weights (e.g., 4x4 = 16 weights) used in convolution to detect local patterns.\n• Feature Map: The output matrix resulting from sliding a filter over the input image and computing convolutions.\n• Regression vs Classification: Regression predicts continuous values; classification predicts discrete class labels, often with class probabilities.",
+    "sources": [
+      {
+        "lecture_id": 1003,
+        "title": "Deep Computer Vision",
+        "section_title": "Computer Vision & Generative Models"
+      }
+    ]
+  },
+  {
+    "question": "What does the instructor emphasise as most important in Deep Computer Vision?",
+    "answer": "• Spatial structure of images should guide network architecture.\n• Manual feature extraction has many practical limitations.\n• Convolutional layers share parameters to efficiently learn local features.",
+    "sources": [
+      {
+        "lecture_id": 1003,
+        "title": "Deep Computer Vision",
+        "section_title": "Computer Vision & Generative Models"
+      }
+    ]
+  },
+  {
+    "question": "What is the 'Deep Generative Modeling' lecture about?",
+    "answer": "The lecture explains why generative models are useful for tasks like outlier detection and sample generation, introducing latent variable models such as autoencoders and variational autoencoders (VAEs). It shows how autoencoders learn a low‑dimensional latent space via an encoder‑decoder pair and reconstruction loss, and how VAEs add a probabilistic twist with mean and standard‑deviation vectors, a normal Gaussian prior, and a KL‑divergence regularizer. The instructor demonstrates the reparameterization trick to enable back‑propagation through the sampling step and discusses latent perturbation to interpret individual latent dimensions. Learners come away understanding how to train and use VAEs for generating new data and detecting anomalies.",
+    "sources": [
+      {
+        "lecture_id": 1004,
+        "title": "Deep Generative Modeling",
+        "section_title": "Computer Vision & Generative Models"
+      }
+    ]
+  },
+  {
+    "question": "What are the key concepts covered in Deep Generative Modeling?",
+    "answer": "• Generative models can detect outliers by modeling the data distribution and flagging low‑probability samples.\n• Autoencoders learn a compressed latent representation using an encoder, decoder, and reconstruction loss without labels.\n• Variational autoencoders treat the latent code as a distribution (mean and std vectors) and optimize reconstruction loss plus KL‑divergence regularization.\n• A normal Gaussian prior (N(0, I)) on the latent space encourages continuity and completeness of generated samples.\n• The reparameterization trick rewrites sampling as a deterministic function of a random variable, allowing gradient flow through the latent layer.",
+    "sources": [
+      {
+        "lecture_id": 1004,
+        "title": "Deep Generative Modeling",
+        "section_title": "Computer Vision & Generative Models"
+      }
+    ]
+  },
+  {
+    "question": "What will I learn from the Deep Generative Modeling lecture?",
+    "answer": "• How to use a generative model to flag rare driving scenarios as outliers.\n• How to train an autoencoder by minimizing ||x ‑ x̂||² as the loss function.\n• That VAEs compute a loss = reconstruction loss + KL‑divergence between q(z|x) and p(z).\n• The standard choice of prior for VAEs is a unit‑variance normal Gaussian, p(z)=N(0, I).\n• How to apply the reparameterization trick: z = μ + σ·ε with ε~N(0,1).\n• How to interpret latent dimensions by perturbing a single variable while keeping others fixed.",
+    "sources": [
+      {
+        "lecture_id": 1004,
+        "title": "Deep Generative Modeling",
+        "section_title": "Computer Vision & Generative Models"
+      }
+    ]
+  },
+  {
+    "question": "What are the important terms defined in Deep Generative Modeling?",
+    "answer": "• latent variable: An unobserved variable that explains the underlying factors generating the observed data.\n• encoder: A neural network that maps input data x to a low‑dimensional latent representation z.\n• decoder: A neural network that maps a latent code z back to a reconstruction of the original data.\n• KL‑divergence regularization: A term in the VAE loss that measures the difference between the approximate posterior q(z|x) and the prior p(z).\n• reparameterization trick: A method to express the stochastic sampling of z as a deterministic operation on a random variable ε, enabling gradient back‑propagation.",
+    "sources": [
+      {
+        "lecture_id": 1004,
+        "title": "Deep Generative Modeling",
+        "section_title": "Computer Vision & Generative Models"
+      }
+    ]
+  },
+  {
+    "question": "What does the instructor emphasise as most important in Deep Generative Modeling?",
+    "answer": "• Generative models are valuable for outlier detection in safety‑critical domains.\n• Regularizing the latent space with a normal prior yields continuity and completeness of generated samples.\n• The reparameterization trick is essential for training VAEs end‑to‑end.",
+    "sources": [
+      {
+        "lecture_id": 1004,
+        "title": "Deep Generative Modeling",
+        "section_title": "Computer Vision & Generative Models"
+      }
+    ]
+  },
+  {
+    "question": "What is the 'Deep Reinforcement Learning' lecture about?",
+    "answer": "The lecture introduces advanced deep reinforcement learning concepts, starting with the fundamental RL elements (agent, environment, actions, states, rewards, and discounted return). It explains the Q‑function, shows how Deep Q Networks (DQN) use neural networks to approximate Q‑values, and presents the training loss formulation. The instructor then contrasts Q‑learning’s limitation to discrete action spaces with policy‑gradient methods that can model continuous actions, illustrating both approaches with examples like Atari Breakout and self‑driving car simulations.",
+    "sources": [
+      {
+        "lecture_id": 1005,
+        "title": "Deep Reinforcement Learning",
+        "section_title": "Advanced Topics"
+      }
+    ]
+  },
+  {
+    "question": "What are the key concepts covered in Deep Reinforcement Learning?",
+    "answer": "• An agent interacts with an environment by taking actions and receiving observations, states, and rewards.\n• The action space A is the set of all possible actions the agent can execute in the environment.\n• Return (total reward) is the discounted sum of future rewards: R_t = Σ_{k=0}^∞ γ^k r_{t+k}, with 0 < γ < 1.\n• The Q‑function Q(s,a) = E[R_t | s_t = s, a_t = a] estimates the expected future return for a state‑action pair.\n• Deep Q Networks (DQN) approximate Q(s,a) with a neural network and train using the loss L = (r + γ max_{a'} Q(s',a') - Q(s,a))^2.",
+    "sources": [
+      {
+        "lecture_id": 1005,
+        "title": "Deep Reinforcement Learning",
+        "section_title": "Advanced Topics"
+      }
+    ]
+  },
+  {
+    "question": "What will I learn from the Deep Reinforcement Learning lecture?",
+    "answer": "• How to compute the discounted return using a discount factor γ where 0 < γ < 1.\n• Derive the optimal deterministic policy as π*(s) = argmax_a Q(s,a).\n• Structure a DQN that maps a state (e.g., an image) and each possible action to an expected return.\n• Train a DQN with the target value r + γ max_{a'} Q(s',a') and minimize the squared error loss.\n• Recognize that Q‑learning is limited to discrete, small action spaces and cannot directly handle continuous actions.\n• Apply policy‑gradient methods to directly optimize a stochastic policy π(a|s), often modeled as a Gaussian distribution for continuous actions.",
+    "sources": [
+      {
+        "lecture_id": 1005,
+        "title": "Deep Reinforcement Learning",
+        "section_title": "Advanced Topics"
+      }
+    ]
+  },
+  {
+    "question": "What are the important terms defined in Deep Reinforcement Learning?",
+    "answer": "• Agent: The decision‑making entity that selects actions based on observations from the environment.\n• Environment: The external system with which the agent interacts, providing states and rewards.\n• Discount factor (γ): A scalar between 0 and 1 that determines how future rewards are weighted relative to immediate rewards.\n• Q‑function: Q(s,a) = E[R_t | s_t = s, a_t = a]; the expected total future reward when taking action a in state s.\n• Policy Gradient: A method that directly optimizes the policy π(a|s) by adjusting its parameters to increase expected return.",
+    "sources": [
+      {
+        "lecture_id": 1005,
+        "title": "Deep Reinforcement Learning",
+        "section_title": "Advanced Topics"
+      }
+    ]
+  },
+  {
+    "question": "What does the instructor emphasise as most important in Deep Reinforcement Learning?",
+    "answer": "• Q‑learning’s inability to handle continuous action spaces.\n• Policy‑gradient methods enable modeling of continuous actions.\n• DQN uses a neural network to approximate the Q‑function and requires the target loss formulation.",
+    "sources": [
+      {
+        "lecture_id": 1005,
+        "title": "Deep Reinforcement Learning",
+        "section_title": "Advanced Topics"
+      }
+    ]
+  }
+]

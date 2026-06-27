@@ -1,0 +1,673 @@
+{
+  "progress": {
+    "course_title": "MIT 6.S191: Introduction to Deep Learning",
+    "course_id": "6s191",
+    "progress": {
+      "total_sections": 3,
+      "sections_completed": 0,
+      "total_items": 5,
+      "items_completed": 0,
+      "overall_completion_percent": 0.0,
+      "current_position": {
+        "section_index": 1,
+        "section_title": "Foundations",
+        "subsection_title": "Intro to Deep Learning"
+      },
+      "first_completion_time": null
+    },
+    "sections": [
+      {
+        "section_index": 1,
+        "title": "Foundations",
+        "subsections": [
+          {
+            "type": "lecture",
+            "title": "Intro to Deep Learning",
+            "lecture_id": 1001,
+            "object_index": 1,
+            "is_completed": false
+          },
+          {
+            "type": "lecture",
+            "title": "Deep Sequence Modeling",
+            "lecture_id": 1002,
+            "object_index": 2,
+            "is_completed": false
+          }
+        ],
+        "total_items": 2,
+        "completed_items": 0,
+        "completion_percent": 0.0,
+        "is_completed": false
+      },
+      {
+        "section_index": 2,
+        "title": "Computer Vision & Generative Models",
+        "subsections": [
+          {
+            "type": "lecture",
+            "title": "Deep Computer Vision",
+            "lecture_id": 1003,
+            "object_index": 3,
+            "is_completed": false
+          },
+          {
+            "type": "lecture",
+            "title": "Deep Generative Modeling",
+            "lecture_id": 1004,
+            "object_index": 4,
+            "is_completed": false
+          }
+        ],
+        "total_items": 2,
+        "completed_items": 0,
+        "completion_percent": 0.0,
+        "is_completed": false
+      },
+      {
+        "section_index": 3,
+        "title": "Advanced Topics",
+        "subsections": [
+          {
+            "type": "lecture",
+            "title": "Deep Reinforcement Learning",
+            "lecture_id": 1005,
+            "object_index": 5,
+            "is_completed": false
+          }
+        ],
+        "total_items": 1,
+        "completed_items": 0,
+        "completion_percent": 0.0,
+        "is_completed": false
+      }
+    ]
+  },
+  "lectures": {
+    "course_id": "6s191",
+    "course_title": "MIT 6.S191: Introduction to Deep Learning",
+    "lectures": [
+      {
+        "lecture_id": 1001,
+        "lecture_number": 1,
+        "title": "Intro to Deep Learning",
+        "section_index": 1,
+        "section_title": "Foundations",
+        "object_index": 1,
+        "cached": true,
+        "available": true,
+        "error": null
+      },
+      {
+        "lecture_id": 1002,
+        "lecture_number": 2,
+        "title": "Deep Sequence Modeling",
+        "section_index": 1,
+        "section_title": "Foundations",
+        "object_index": 2,
+        "cached": true,
+        "available": true,
+        "error": null
+      },
+      {
+        "lecture_id": 1003,
+        "lecture_number": 3,
+        "title": "Deep Computer Vision",
+        "section_index": 2,
+        "section_title": "Computer Vision & Generative Models",
+        "object_index": 3,
+        "cached": true,
+        "available": true,
+        "error": null
+      },
+      {
+        "lecture_id": 1004,
+        "lecture_number": 4,
+        "title": "Deep Generative Modeling",
+        "section_index": 2,
+        "section_title": "Computer Vision & Generative Models",
+        "object_index": 4,
+        "cached": true,
+        "available": true,
+        "error": null
+      },
+      {
+        "lecture_id": 1005,
+        "lecture_number": 5,
+        "title": "Deep Reinforcement Learning",
+        "section_index": 3,
+        "section_title": "Advanced Topics",
+        "object_index": 5,
+        "cached": true,
+        "available": true,
+        "error": null
+      }
+    ]
+  },
+  "summary_status": {
+    "course_id": "6s191",
+    "course_title": "MIT 6.S191: Introduction to Deep Learning",
+    "lectures": [
+      {
+        "lecture_id": 1001,
+        "lecture_number": 1,
+        "title": "Intro to Deep Learning",
+        "section_index": 1,
+        "section_title": "Foundations",
+        "object_index": 1,
+        "cached": true,
+        "available": true,
+        "error": null,
+        "summary_cached": true
+      },
+      {
+        "lecture_id": 1002,
+        "lecture_number": 2,
+        "title": "Deep Sequence Modeling",
+        "section_index": 1,
+        "section_title": "Foundations",
+        "object_index": 2,
+        "cached": true,
+        "available": true,
+        "error": null,
+        "summary_cached": true
+      },
+      {
+        "lecture_id": 1003,
+        "lecture_number": 3,
+        "title": "Deep Computer Vision",
+        "section_index": 2,
+        "section_title": "Computer Vision & Generative Models",
+        "object_index": 3,
+        "cached": true,
+        "available": true,
+        "error": null,
+        "summary_cached": true
+      },
+      {
+        "lecture_id": 1004,
+        "lecture_number": 4,
+        "title": "Deep Generative Modeling",
+        "section_index": 2,
+        "section_title": "Computer Vision & Generative Models",
+        "object_index": 4,
+        "cached": true,
+        "available": true,
+        "error": null,
+        "summary_cached": true
+      },
+      {
+        "lecture_id": 1005,
+        "lecture_number": 5,
+        "title": "Deep Reinforcement Learning",
+        "section_index": 3,
+        "section_title": "Advanced Topics",
+        "object_index": 5,
+        "cached": true,
+        "available": true,
+        "error": null,
+        "summary_cached": true
+      }
+    ]
+  },
+  "course_summary": {
+    "course_id": "6s191",
+    "course_title": "MIT 6.S191: Introduction to Deep Learning",
+    "lectures_included": 5,
+    "overall_summary": "You started by mastering the perceptron and built your first custom dense layer in PyTorch, then moved on to sequence models where you coded RNN cells in TensorFlow and used built‑in RNN layers in PyTorch. Next you explored how convolutional filters turn raw pixel matrices into powerful visual features with CNNs, followed by learning to compress and generate data with autoencoders and variational autoencoders, including the reparameterization trick. Finally you dived into reinforcement learning, implementing Deep Q‑Networks and seeing how policy‑gradient methods handle continuous actions. Across the course you used PyTorch, TensorFlow, and key deep‑learning primitives, so you can now design, train, and evaluate models for vision, language, generative tasks, and control problems.",
+    "what_you_covered": [
+      "Lecture 1 — You learned the perceptron, explored sigmoid, tanh, and ReLU activations, and built a custom dense (fully‑connected) layer from scratch in PyTorch using nn.Parameter.",
+      "Lecture 2 — You studied recurrent neural networks, created a custom RNN cell in TensorFlow, used SimpleRNN and PyTorch RNN layers, and practiced backpropagation through time while understanding exploding gradients and word embeddings.",
+      "Lecture 3 — You discovered how images are numeric matrices, compared manual feature extraction to convolutional neural networks, and implemented sliding‑window filters with weight sharing to preserve spatial structure for classification and regression tasks.",
+      "Lecture 4 — You examined generative modeling with autoencoders and variational autoencoders, learned to train encoder‑decoder pairs with reconstruction loss, applied the KL‑divergence regularizer and reparameterization trick, and used latent perturbations for data generation and anomaly detection.",
+      "Lecture 5 — You explored deep reinforcement learning fundamentals, built Deep Q‑Networks to approximate Q‑values, derived the DQN loss, and contrasted Q‑learning with policy‑gradient methods for discrete and continuous action spaces using examples like Atari Breakout and self‑driving car simulations."
+    ],
+    "tools_and_technologies": [
+      "PyTorch – used for implementing custom dense layers, RNN layers, CNNs, and DQNs.",
+      "nn.Parameter – PyTorch construct for defining learnable weights in custom layers.",
+      "TensorFlow – employed to build a custom RNN cell from the ground up.",
+      "SimpleRNN – TensorFlow’s built‑in recurrent layer for quick sequence modeling.",
+      "PyTorch RNN layers – ready‑made recurrent modules for handling sequential data.",
+      "Word embeddings – dense vector representations that enable neural networks to process textual inputs.",
+      "Convolutional filters – sliding‑window kernels that extract local visual features with weight sharing.",
+      "CNN (Convolutional Neural Network) – architecture that preserves spatial structure while reducing parameters.",
+      "Autoencoder – encoder‑decoder network trained with reconstruction loss to learn compressed latent representations.",
+      "Variational Autoencoder (VAE) – probabilistic autoencoder that models latent codes as Gaussian distributions.",
+      "Reparameterization trick – technique that makes sampling differentiable for back‑propagation in VAEs.",
+      "KL‑divergence regularizer – term that forces the VAE’s latent distribution toward a standard normal prior.",
+      "Deep Q Network (DQN) – neural network that approximates the Q‑function for discrete‑action reinforcement learning.",
+      "Policy‑gradient methods – reinforcement‑learning algorithms that directly optimize the policy for continuous actions."
+    ],
+    "skills_acquired": [
+      "I can implement a custom dense (fully‑connected) layer in PyTorch using nn.Parameter.",
+      "I can design, train, and evaluate recurrent neural networks with backpropagation through time in both TensorFlow and PyTorch.",
+      "I can apply word embeddings to convert discrete tokens into dense vectors for language models.",
+      "I can construct convolutional neural networks, define filters, and leverage weight sharing for image classification and regression.",
+      "I can build and train autoencoders and variational autoencoders, including using the reparameterization trick and KL‑divergence regularization.",
+      "I can generate new data samples and detect outliers using learned latent spaces.",
+      "I can implement Deep Q‑Networks, compute the DQN loss, and train agents in discrete‑action environments.",
+      "I can explain the difference between Q‑learning and policy‑gradient approaches and apply each to appropriate reinforcement‑learning problems."
+    ],
+    "knowledge_progression": "You began with the simplest neural unit—the perceptron—and gradually added layers, non‑linearities, and custom implementations. The curriculum then introduced temporal dynamics with RNNs, spatial hierarchies with CNNs, and probabilistic generative modeling with VAEs, each building on the core concepts of weight sharing and gradient‑based learning. By the final lecture you integrated these ideas into decision‑making agents, mastering both value‑based (DQN) and policy‑based reinforcement learning.",
+    "key_concepts_covered": [
+      "Perceptron – computes y = g(W·x + b) using a linear combination followed by a non‑linear activation.",
+      "Activation functions – sigmoid, tanh, ReLU; introduce non‑linearity to enable complex mappings.",
+      "Dense (fully‑connected) layer – connects every input neuron to every output neuron.",
+      "nn.Parameter – PyTorch object for defining learnable parameters in custom modules.",
+      "Recurrent Neural Network (RNN) – applies the same recurrence relation at each time step to maintain a hidden state.",
+      "Hidden state – vector that carries information from previous inputs through time.",
+      "Variable‑length sequences – inputs of differing lengths handled by parameter sharing in RNNs.",
+      "Backpropagation Through Time (BPTT) – gradient computation method that unfolds an RNN across time steps.",
+      "Exploding gradients – instability caused by repeated multiplication of large recurrent weight matrices.",
+      "Word embeddings – dense vector representations of discrete word indices.",
+      "Convolution – operation applying a filter across spatial patches of an image.",
+      "Filter (kernel) – small matrix of shared weights used in convolutional layers.",
+      "Weight sharing – reusing the same filter parameters across different spatial locations.",
+      "Spatial structure – preservation of the 2‑D arrangement of pixels in CNNs.",
+      "Convolutional Neural Network (CNN) – architecture that leverages convolutions and pooling for vision tasks.",
+      "Classification – predicting discrete class labels or probabilities.",
+      "Regression – predicting continuous values.",
+      "Autoencoder – encoder‑decoder network trained to reconstruct inputs, learning a compressed latent space.",
+      "Latent space – low‑dimensional representation learned by an autoencoder.",
+      "Variational Autoencoder (VAE) – generative model that treats latent codes as Gaussian distributions.",
+      "Mean vector and standard‑deviation vector – parameters of the latent Gaussian in a VAE.",
+      "Gaussian prior (N(0, I)) – regularizes the latent space to be centered and isotropic.",
+      "KL‑divergence regularizer – term that measures divergence between the latent distribution and the prior.",
+      "Reparameterization trick – rewrites sampling as a deterministic function of a random variable to enable back‑propagation.",
+      "Latent perturbation – modifying individual latent dimensions to interpret their effect on generated data.",
+      "Generative model – learns data distribution to generate new samples or detect outliers.",
+      "Deep Q Network (DQN) – neural network approximating the Q‑function for discrete actions.",
+      "Q‑function – expected return for a given state‑action pair.",
+      "Discounted return – sum of future rewards weighted by a factor γ.",
+      "Policy‑gradient methods – reinforcement‑learning techniques that directly optimize the policy for continuous actions.",
+      "Action space – set of all possible actions an agent can take.",
+      "Agent, environment, state, reward – fundamental RL components."
+    ],
+    "quick_review_topics": [
+      "Activation functions – they appeared in the perceptron lecture and are essential for every deep model.",
+      "Backpropagation Through Time – used for training RNNs and worth revisiting to understand gradient flow over sequences.",
+      "Weight sharing – core to both convolutional filters and recurrent connections; review how it reduces parameters.",
+      "KL‑divergence regularizer – central to VAEs for shaping the latent distribution; make sure you grasp its role.",
+      "Q‑function and DQN loss – pivotal for value‑based reinforcement learning; compare with policy‑gradient objectives.",
+      "Latent space manipulation – practice perturbing VAE latent dimensions to see how generated samples change."
+    ]
+  },
+  "lecture_summaries": {
+    "1001": {
+      "lecture_id": 1001,
+      "lecture_number": 1,
+      "title": "Intro to Deep Learning",
+      "section_title": "Foundations",
+      "available": true,
+      "summary": "The lecture introduces the perceptron as the fundamental building block of deep learning, explaining its forward propagation as a linear combination of inputs followed by a non-linear activation. It covers common activation functions—sigmoid, hyperbolic tangent, and ReLU—and demonstrates why non-linearities are essential for modeling complex decisions. The instructor shows how to implement a dense (fully‑connected) layer from scratch in PyTorch and walks through a concrete perceptron example with specific weights and bias.",
+      "key_concepts": [
+        "Perceptron computes y = g(W·x + b) using a linear combination and a non‑linear activation",
+        "Activation functions (sigmoid, tanh, ReLU) introduce non‑linearity enabling arbitrarily complex mappings",
+        "Linear activations yield only linear decision boundaries regardless of network depth",
+        "Dense (fully‑connected) layers connect every input to every output, extending the perceptron to multiple outputs",
+        "Implementing a custom dense layer in PyTorch with nn.Parameter for learnable weights"
+      ],
+      "what_you_learned": [
+        "How to calculate a perceptron output: with W1=1, W2=3, bias=1, input X=[-1,2] gives y≈0.002 after sigmoid",
+        "The sigmoid function formula g(z)=1/(1+e^{-z}) and its derivative g'(z)=g(z)(1‑g(z))",
+        "ReLU function definition g(z)=max(0,z) and its piecewise derivative",
+        "Why linear activation functions cannot create non‑linear decision boundaries",
+        "How to write a PyTorch dense layer class: class MyDenseLayer(nn.Module) with torch.randn weights",
+        "The role of dense layers in multi‑output perceptrons (each output computes y_i = g(W_i·x + b_i))"
+      ],
+      "important_terms": [
+        {
+          "term": "Perceptron",
+          "definition": "The structural building block of deep learning that performs a weighted sum of inputs plus bias, then applies a non‑linear activation function.",
+          "example": "With weights W1=1, W2=3, bias=1 and input X=[-1,2], the perceptron output after sigmoid is ≈0.002."
+        },
+        {
+          "term": "Activation Function",
+          "definition": "A non‑linear function applied to the perceptron's linear combination to enable complex mappings.",
+          "example": "Sigmoid: g(z)=1/(1+e^{-z}); ReLU: g(z)=max(0,z)."
+        },
+        {
+          "term": "Dense Layer",
+          "definition": "A fully‑connected layer where every input neuron connects to every output neuron; also called a multi‑output perceptron.",
+          "example": "Implemented in PyTorch as MyDenseLayer with weight matrix of shape (input_dim, output_dim)."
+        },
+        {
+          "term": "Sigmoid Function",
+          "definition": "An S‑shaped activation: g(z)=1/(1+e^{-z}), output range (0,1).",
+          "example": "For z=‑6, sigmoid returns ≈0.002."
+        },
+        {
+          "term": "ReLU",
+          "definition": "Rectified Linear Unit activation: g(z)=max(0,z), passes positive values unchanged and zeroes negatives.",
+          "example": "If z=‑3, ReLU output is 0."
+        }
+      ],
+      "specific_details": {
+        "commands": [],
+        "numbers_and_specs": [
+          "Weight values in example: W1=1, W2=3, bias=1",
+          "Input vector example: X=[-1,2]",
+          "Sigmoid output for z=‑6 ≈ 0.002",
+          "Sigmoid derivative: g'(z)=g(z)(1‑g(z))",
+          "ReLU definition: g(z)=max(0,z)",
+          "PyTorch weight initialization: torch.randn(input_dim, output_dim, requires_grad=True)"
+        ],
+        "urls_and_resources": [
+          "introtodeeplearning.com",
+          "bit.ly/6s!91-syllabus",
+          "github.com/MI1DeepLearning/introtodeeplearning"
+        ],
+        "comparisons": [
+          "Linear activation functions produce linear decisions no matter the network size",
+          "Non‑linear activation functions allow arbitrarily complex decisions",
+          "Dense layers vs single‑output perceptron: dense layers have all inputs connected to each output"
+        ]
+      },
+      "instructor_emphasis": [
+        "Non‑linear activation functions are essential and will appear throughout the course",
+        "Linear activations cannot create non‑linear decision boundaries",
+        "The perceptron is the foundational building block for all deep learning models"
+      ],
+      "difficulty": "beginner",
+      "estimated_review_time_minutes": 5
+    },
+    "1002": {
+      "lecture_id": 1002,
+      "lecture_number": 2,
+      "title": "Deep Sequence Modeling",
+      "section_title": "Foundations",
+      "available": true,
+      "summary": "The lecture introduces the foundations of deep sequence modeling, focusing on recurrent neural networks (RNNs) and how they process variable‑length sequences by sharing parameters across time steps. It demonstrates building a custom RNN cell in TensorFlow, using built‑in SimpleRNN and PyTorch RNN layers, and explains training with backpropagation through time. Learners come away understanding how RNNs maintain hidden states, handle long‑term dependencies, and the challenges of exploding gradients.",
+      "key_concepts": [
+        "RNNs apply the same recurrence relation at every time step, updating a hidden state that carries information from previous inputs.",
+        "Sequence modeling design criteria include handling variable‑length inputs, tracking long‑term dependencies, preserving order, and sharing parameters.",
+        "Word embeddings convert discrete word indices into dense vectors, enabling neural networks to process language.",
+        "Backpropagation Through Time (BPTT) unfolds the RNN across time to compute gradients for learning.",
+        "Exploding gradients arise from repeated multiplication by recurrent weight matrices, destabilizing training."
+      ],
+      "what_you_learned": [
+        "How to implement a custom RNN cell in TensorFlow using tf.keras.layers.Layer and weight matrices W_xh, W_hh, W_hy.",
+        "How to instantiate a built‑in SimpleRNN layer in TensorFlow with a specified number of units.",
+        "How to create a PyTorch RNN layer with torch.nn.RNN specifying input size and hidden units.",
+        "How hidden states are initialized to zeros and updated with tanh(W_hh·h_{t‑1} + W_xh·x_t).",
+        "How to encode words using one‑hot vectors versus learned embeddings.",
+        "Why BPTT can cause exploding gradients and the need for techniques to mitigate it."
+      ],
+      "important_terms": [
+        {
+          "term": "Recurrent Neural Network (RNN)",
+          "definition": "A network that processes sequences by applying the same function and weight matrices at each time step, maintaining a hidden state that is updated from the previous state and current input.",
+          "example": "Processing the sentence [\"I\", \"Love\", \"recurrent\", \"neural\"] to predict the next word."
+        },
+        {
+          "term": "Hidden state",
+          "definition": "A vector (e.g., initialized as [0, 0, 0, 0]) that stores information from past time steps and is updated via h_t = tanh(W_hh·h_{t‑1} + W_xh·x_t).",
+          "example": "After reading \"I\" the hidden state might become [0.2, -0.1, 0.0, 0.3]."
+        },
+        {
+          "term": "Embedding",
+          "definition": "A learned dense vector representation that maps a word index to a fixed‑size vector, replacing sparse one‑hot encodings.",
+          "example": "The word \"cat\" could be represented as [0.1, -0.3, 0.5, 0.0, 0.2]."
+        },
+        {
+          "term": "Backpropagation Through Time (BPTT)",
+          "definition": "Training algorithm for RNNs that unfolds the network across time steps, computes gradients through the unrolled graph, and updates shared parameters.",
+          "example": "During BPTT the gradient for W_hh includes multiple products of W_hh across time steps."
+        },
+        {
+          "term": "Exploding Gradient",
+          "definition": "A phenomenon where repeated multiplication by recurrent weight matrices causes gradient magnitudes to grow exponentially, making learning unstable.",
+          "example": "Gradient magnitude becomes very large after many time steps, requiring gradient clipping."
+        }
+      ],
+      "specific_details": {
+        "commands": [
+          "class MyRNNCell (tf.keras.layers.Layer) :",
+          "def __init__(self, rnn_units, input_dim, output_dim):",
+          "super(MyRNNCell, self).__init__()",
+          "self.W_xh = self.add_weight([rnn_units, input_dim])",
+          "self.W_hh = self.add_weight([rnn_units, rnn_units])",
+          "self.W_hy = self.add_weight([output_dim, rnn_units])",
+          "self.h = tf.zeros([rnn_units, 1])",
+          "def call(self, x):",
+          "self.h = tf.math.tanh(self.W_hh * self.h + self.W_xh * x)",
+          "output = self.W_hy * self.h",
+          "return output, self.h",
+          "from tf.keras.layers import SimpleRNN",
+          "model = SimpleRNN(rnn_units)",
+          "from torch.nn import RNN",
+          "model = RNN(input_size, rnn_units)"
+        ],
+        "numbers_and_specs": [],
+        "urls_and_resources": [
+          "introtodeeplearning.com"
+        ],
+        "comparisons": [
+          "One‑hot embedding vs. learned embedding: one‑hot uses a sparse binary vector, learned embedding maps indexes to dense vectors trained with the model.",
+          "Feed‑forward networks process each input independently, whereas recurrent networks share parameters and maintain a hidden state across time."
+        ]
+      },
+      "instructor_emphasis": [
+        "RNNs satisfy all four sequence‑modeling design criteria.",
+        "The same weight matrices are reused at every time step in an RNN.",
+        "Backpropagation through time can lead to exploding gradients, which must be addressed."
+      ],
+      "difficulty": "intermediate",
+      "estimated_review_time_minutes": 5
+    },
+    "1003": {
+      "lecture_id": 1003,
+      "lecture_number": 3,
+      "title": "Deep Computer Vision",
+      "section_title": "Computer Vision & Generative Models",
+      "available": true,
+      "summary": "The lecture explains that images are matrices of pixel values (0‑255) and introduces computer‑vision tasks such as classification and regression. It contrasts manual feature extraction with learning hierarchical features via convolutional neural networks, showing how CNNs use spatial structure, sliding‑window filters, and weight sharing. Learners see how fully‑connected nets ignore spatial layout, while convolutions preserve it and reduce parameters.",
+      "key_concepts": [
+        "Images are numeric matrices; an RGB image can be represented as 80x80x3 values in the range 0‑255.",
+        "Manual feature extraction is limited by viewpoint, scale, occlusion, and background variation.",
+        "Convolution applies a filter (e.g., 4x4 with 16 shared weights) across patches to extract local features.",
+        "CNNs preserve spatial structure by connecting each neuron to a local region of the input, unlike fully‑connected networks.",
+        "Classification outputs class labels (or probabilities) while regression outputs continuous values."
+      ],
+      "what_you_learned": [
+        "An image is a matrix of numbers between 0 and 255; for RGB, shape is 80x80x3.",
+        "A 4x4 convolution filter contains 16 learnable weights.",
+        "A 3x3 filter sliding over a 5x5 image produces a feature map via element‑wise multiplication and summation.",
+        "Fully connected networks treat the input as a flat vector, losing spatial information and requiring many parameters.",
+        "Convolutional layers share filter weights across all spatial locations, drastically reducing parameter count.",
+        "Manual feature extraction struggles with variations such as viewpoint, scale, occlusion, and background clutter."
+      ],
+      "important_terms": [
+        {
+          "term": "Fully Connected Neural Network",
+          "definition": "A network where each neuron in a layer connects to every neuron in the next layer, using a vector of pixel values and ignoring spatial layout.",
+          "example": null
+        },
+        {
+          "term": "Convolution",
+          "definition": "An operation that applies a small filter (e.g., 3x3 or 4x4) across an image, multiplying overlapping patches element‑wise and summing to produce a feature map.",
+          "example": "Applying a 3x3 filter to a 5x5 image yields a reduced feature map."
+        },
+        {
+          "term": "Filter (Kernel)",
+          "definition": "A small matrix of learnable weights (e.g., 4x4 = 16 weights) used in convolution to detect local patterns.",
+          "example": null
+        },
+        {
+          "term": "Feature Map",
+          "definition": "The output matrix resulting from sliding a filter over the input image and computing convolutions.",
+          "example": null
+        },
+        {
+          "term": "Regression vs Classification",
+          "definition": "Regression predicts continuous values; classification predicts discrete class labels, often with class probabilities.",
+          "example": null
+        }
+      ],
+      "specific_details": {
+        "commands": [],
+        "numbers_and_specs": [
+          "Pixel values range: [0,255]",
+          "RGB image dimensions example: 80x80x3",
+          "Filter size example: 4x4 (16 weights)",
+          "Filter size example: 3x3",
+          "Input image example for convolution: 5x5"
+        ],
+        "urls_and_resources": [
+          "introtodeeplearning.com",
+          "MIT Introduction to Deep Learning"
+        ],
+        "comparisons": [
+          "Fully connected networks lose spatial information and have many parameters, whereas CNNs preserve spatial structure with shared filters."
+        ]
+      },
+      "instructor_emphasis": [
+        "Spatial structure of images should guide network architecture.",
+        "Manual feature extraction has many practical limitations.",
+        "Convolutional layers share parameters to efficiently learn local features."
+      ],
+      "difficulty": "intermediate",
+      "estimated_review_time_minutes": 5
+    },
+    "1004": {
+      "lecture_id": 1004,
+      "lecture_number": 4,
+      "title": "Deep Generative Modeling",
+      "section_title": "Computer Vision & Generative Models",
+      "available": true,
+      "summary": "The lecture explains why generative models are useful for tasks like outlier detection and sample generation, introducing latent variable models such as autoencoders and variational autoencoders (VAEs). It shows how autoencoders learn a low‑dimensional latent space via an encoder‑decoder pair and reconstruction loss, and how VAEs add a probabilistic twist with mean and standard‑deviation vectors, a normal Gaussian prior, and a KL‑divergence regularizer. The instructor demonstrates the reparameterization trick to enable back‑propagation through the sampling step and discusses latent perturbation to interpret individual latent dimensions. Learners come away understanding how to train and use VAEs for generating new data and detecting anomalies.",
+      "key_concepts": [
+        "Generative models can detect outliers by modeling the data distribution and flagging low‑probability samples.",
+        "Autoencoders learn a compressed latent representation using an encoder, decoder, and reconstruction loss without labels.",
+        "Variational autoencoders treat the latent code as a distribution (mean and std vectors) and optimize reconstruction loss plus KL‑divergence regularization.",
+        "A normal Gaussian prior (N(0, I)) on the latent space encourages continuity and completeness of generated samples.",
+        "The reparameterization trick rewrites sampling as a deterministic function of a random variable, allowing gradient flow through the latent layer."
+      ],
+      "what_you_learned": [
+        "How to use a generative model to flag rare driving scenarios as outliers.",
+        "How to train an autoencoder by minimizing ||x ‑ x̂||² as the loss function.",
+        "That VAEs compute a loss = reconstruction loss + KL‑divergence between q(z|x) and p(z).",
+        "The standard choice of prior for VAEs is a unit‑variance normal Gaussian, p(z)=N(0, I).",
+        "How to apply the reparameterization trick: z = μ + σ·ε with ε~N(0,1).",
+        "How to interpret latent dimensions by perturbing a single variable while keeping others fixed."
+      ],
+      "important_terms": [
+        {
+          "term": "latent variable",
+          "definition": "An unobserved variable that explains the underlying factors generating the observed data.",
+          "example": "In a VAE, the latent variable z is sampled from a distribution parameterized by μ and σ."
+        },
+        {
+          "term": "encoder",
+          "definition": "A neural network that maps input data x to a low‑dimensional latent representation z.",
+          "example": "The encoder outputs the mean and standard‑deviation vectors for the VAE."
+        },
+        {
+          "term": "decoder",
+          "definition": "A neural network that maps a latent code z back to a reconstruction of the original data.",
+          "example": "The decoder produces x̂, the reconstructed image, from sampled z."
+        },
+        {
+          "term": "KL‑divergence regularization",
+          "definition": "A term in the VAE loss that measures the difference between the approximate posterior q(z|x) and the prior p(z).",
+          "example": "Minimizing KL(q(z|x)||p(z)) encourages the latent codes to follow a normal Gaussian."
+        },
+        {
+          "term": "reparameterization trick",
+          "definition": "A method to express the stochastic sampling of z as a deterministic operation on a random variable ε, enabling gradient back‑propagation.",
+          "example": "z = μ + σ·ε where ε∼N(0,1)."
+        }
+      ],
+      "specific_details": {
+        "commands": [],
+        "numbers_and_specs": [
+          "Reconstruction loss often uses L2 norm: ||x ‑ x̂||²",
+          "Normal Gaussian prior: p(z)=N(0, I)",
+          "KL‑divergence summed over latent dimensions"
+        ],
+        "urls_and_resources": [],
+        "comparisons": [
+          "Traditional autoencoders vs. VAEs: VAEs add a probabilistic latent distribution and regularization term."
+        ]
+      },
+      "instructor_emphasis": [
+        "Generative models are valuable for outlier detection in safety‑critical domains.",
+        "Regularizing the latent space with a normal prior yields continuity and completeness of generated samples.",
+        "The reparameterization trick is essential for training VAEs end‑to‑end."
+      ],
+      "difficulty": "intermediate",
+      "estimated_review_time_minutes": 5
+    },
+    "1005": {
+      "lecture_id": 1005,
+      "lecture_number": 5,
+      "title": "Deep Reinforcement Learning",
+      "section_title": "Advanced Topics",
+      "available": true,
+      "summary": "The lecture introduces advanced deep reinforcement learning concepts, starting with the fundamental RL elements (agent, environment, actions, states, rewards, and discounted return). It explains the Q‑function, shows how Deep Q Networks (DQN) use neural networks to approximate Q‑values, and presents the training loss formulation. The instructor then contrasts Q‑learning’s limitation to discrete action spaces with policy‑gradient methods that can model continuous actions, illustrating both approaches with examples like Atari Breakout and self‑driving car simulations.",
+      "key_concepts": [
+        "An agent interacts with an environment by taking actions and receiving observations, states, and rewards.",
+        "The action space A is the set of all possible actions the agent can execute in the environment.",
+        "Return (total reward) is the discounted sum of future rewards: R_t = Σ_{k=0}^∞ γ^k r_{t+k}, with 0 < γ < 1.",
+        "The Q‑function Q(s,a) = E[R_t | s_t = s, a_t = a] estimates the expected future return for a state‑action pair.",
+        "Deep Q Networks (DQN) approximate Q(s,a) with a neural network and train using the loss L = (r + γ max_{a'} Q(s',a') - Q(s,a))^2."
+      ],
+      "what_you_learned": [
+        "How to compute the discounted return using a discount factor γ where 0 < γ < 1.",
+        "Derive the optimal deterministic policy as π*(s) = argmax_a Q(s,a).",
+        "Structure a DQN that maps a state (e.g., an image) and each possible action to an expected return.",
+        "Train a DQN with the target value r + γ max_{a'} Q(s',a') and minimize the squared error loss.",
+        "Recognize that Q‑learning is limited to discrete, small action spaces and cannot directly handle continuous actions.",
+        "Apply policy‑gradient methods to directly optimize a stochastic policy π(a|s), often modeled as a Gaussian distribution for continuous actions."
+      ],
+      "important_terms": [
+        {
+          "term": "Agent",
+          "definition": "The decision‑making entity that selects actions based on observations from the environment.",
+          "example": "In the self‑driving car case study, the vehicle is the agent."
+        },
+        {
+          "term": "Environment",
+          "definition": "The external system with which the agent interacts, providing states and rewards.",
+          "example": "Atari Breakout game screen serves as the environment for the DQN example."
+        },
+        {
+          "term": "Discount factor (γ)",
+          "definition": "A scalar between 0 and 1 that determines how future rewards are weighted relative to immediate rewards.",
+          "example": "γ is used in the return formula R_t = Σ γ^k r_{t+k}."
+        },
+        {
+          "term": "Q‑function",
+          "definition": "Q(s,a) = E[R_t | s_t = s, a_t = a]; the expected total future reward when taking action a in state s.",
+          "example": "Higher Q‑values indicate more promising (state, action) pairs in Atari Breakout."
+        },
+        {
+          "term": "Policy Gradient",
+          "definition": "A method that directly optimizes the policy π(a|s) by adjusting its parameters to increase expected return.",
+          "example": "Modeling π(a|s) as a Gaussian distribution enables continuous steering angle control in self‑driving cars."
+        }
+      ],
+      "specific_details": {
+        "commands": [],
+        "numbers_and_specs": [
+          "Discount factor γ (0 < γ < 1)",
+          "Training loss: L = (r + γ max_{a'} Q(s',a') - Q(s,a))^2"
+        ],
+        "urls_and_resources": [
+          "introtodeeplearning.com"
+        ],
+        "comparisons": [
+          "Q‑learning can only handle discrete, small action spaces; policy‑gradient methods can handle continuous action spaces.",
+          "Q‑learning derives a deterministic policy by maximizing Q; policy gradients learn a stochastic policy directly."
+        ]
+      },
+      "instructor_emphasis": [
+        "Q‑learning’s inability to handle continuous action spaces.",
+        "Policy‑gradient methods enable modeling of continuous actions.",
+        "DQN uses a neural network to approximate the Q‑function and requires the target loss formulation."
+      ],
+      "difficulty": "advanced",
+      "estimated_review_time_minutes": 5
+    }
+  }
+}
